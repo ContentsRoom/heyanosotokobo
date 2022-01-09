@@ -102,8 +102,20 @@ header {
     min-width: 100%;
 }
  .pc img {
-   width: 25%;
+   width: 50%;
  }
  .sp img {
    width: 50%;
+ }
+img div.it {
+  width: 25%;
+}
+.ite img {
+  width: 25%;
+}
+ .box1{
+
+  width:100%; height:100%;
+margin:5px; padding:10px; border:1px solid rgb(255, 255, 255);
+background-color: rgb(218, 218, 218);
  }
