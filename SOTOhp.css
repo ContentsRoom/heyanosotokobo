@@ -1,0 +1,109 @@
+
+body {
+    text-align: center;
+  }
+  
+  
+  .rimg img {
+      text-align: left;
+      width: 5%;
+  }
+  .rimg {
+    text-align: left;
+  }
+  ul li {
+      
+      display: inline-block;
+      padding: 15px 100px 20px 2px;
+   
+  
+    }
+  
+    .sp ul li {
+      
+      display: inline-block;
+      padding: 15px 10px 20px 2px;
+    
+    
+    }
+  .pc ul li a {
+    font-size: 2vw;
+  }
+  .sp ul li a {
+    font-size: 1vw;
+  }
+
+    /*PCとスマホ版の切り替えるPG*/
+
+/* パソコンで見たときは"pc"のclassがついた画像が表示される */
+.pc { display: block !important; }
+.sp { display: none !important; }
+ 
+/* スマートフォンで見たときは"sp"のclassがついた画像が表示される */
+@media only screen and (max-width: 1800px) {
+    .pc { display: none !important; }
+    .sp { display: block !important; }
+}
+/*ここまで*/
+
+header {
+
+    text-align: center;
+    background-color: rgb(0, 153, 255);
+    background-size: 100%;
+    
+}
+
+.mozisp {
+    font-size: 30%;
+  }
+  
+  
+  
+  
+    
+  .mozi {
+    font-size: 100%;
+  }
+  .menu a {
+    color: rgb(12, 12, 12);
+    text-decoration:none; 
+  }
+
+  
+.menu a:hover {
+    color: white;
+}  
+
+
+ 
+
+#video-area{
+    position: fixed;
+    z-index: -1;/*最背面に設定*/
+    top: 0;
+    right:0;
+    left:0;
+    bottom:0;
+    overflow: hidden;
+}
+
+#video {
+    /*天地中央配置*/
+    position: absolute;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /*縦横幅指定*/
+    width: 177.77777778vh; /* 16:9 の幅→16 ÷ 9＝ 177.77% */
+    height: 56.25vw; /* 16:9の幅 → 9 ÷ 16 = 56.25% */
+    min-height: 100%;
+    min-width: 100%;
+}
+ .pc img {
+   width: 25%;
+ }
+ .sp img {
+   width: 50%;
+ }
